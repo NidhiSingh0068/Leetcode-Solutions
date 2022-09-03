@@ -1,3 +1,9 @@
+
+Note: Limitation of this approach
+logarithm is not defined for negative numbers
+
+
+
 class Solution:
     def hasEvenDigits(self, num) -> int:
         count=math.floor(math.log10(num)+1)
@@ -12,3 +18,7 @@ class Solution:
             if self.hasEvenDigits(num):
                 evencount += 1
         return evencount
+
+
+
+
