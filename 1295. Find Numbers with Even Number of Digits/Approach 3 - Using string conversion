@@ -1,9 +1,0 @@
-class Solution:
-    def findNumbers(self, nums: List[int]) -> int:
-        evencount=0
-        for num in nums:
-            string=str(num)
-            n=len(string)
-            if (n%2==0):
-                evencount+=1
-        return evencount
