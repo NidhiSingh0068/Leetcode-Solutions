@@ -1,0 +1,17 @@
+***
+Approach 1- Using for loop to iterate through each row and add its element
+***
+
+
+class Solution:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        max_wealth=0
+        for row in range(0, len(accounts)):
+            sum_of_account = 0
+            for col in range(0,len(accounts[row])):
+                sum_of_account += accounts[row][col]
+            if sum_of_account > max_wealth:
+                max_wealth = sum_of_account
+                sum_of_account = 0
+        return max_wealth
+       
