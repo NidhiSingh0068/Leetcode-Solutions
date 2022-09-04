@@ -12,6 +12,5 @@ class Solution:
                 sum_of_account += accounts[row][col]
             if sum_of_account > max_wealth:
                 max_wealth = sum_of_account
-                sum_of_account = 0
         return max_wealth
        
