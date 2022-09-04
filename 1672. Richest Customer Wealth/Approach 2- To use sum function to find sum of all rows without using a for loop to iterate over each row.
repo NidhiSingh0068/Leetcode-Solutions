@@ -1,0 +1,13 @@
+***
+Approach 2- To use sum function to find sum of all rows without using a for loop to iterate over each row.
+***
+
+class Solution:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        max_wealth=0
+        sum_money=0
+        for i in range(len(accounts)):
+            sum_money=sum(accounts[i])
+            if sum_money>max_wealth:
+                 max_wealth=sum_money
+        return max_wealth
