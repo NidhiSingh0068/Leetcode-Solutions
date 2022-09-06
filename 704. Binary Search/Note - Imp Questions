@@ -1,0 +1,7 @@
+
+Ques: Which is better recursion or iteration in Python?
+Ans: Since Python does not store anything about previous iteration steps, iteration is quite faster and memory-efficient than recursion.
+     With regard to time complexity, recursive and iterative methods both will give you O(log n) time complexity, with regard to input size,
+     provided you implement correct binary search logic.
+     Focusing on space complexity, the iterative approach is more efficient since we are allocating a constant amount O(1) of space for 
+     the function call and constant space for variable allocations, while the recursive approach takes O(log n) space.
