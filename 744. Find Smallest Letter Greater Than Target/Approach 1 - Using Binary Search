@@ -1,0 +1,22 @@
+class Solution:
+    def nextGreatestLetter(self, letters: List[str], target: str) -> str:
+        target_ord = ord(target)
+        last_ord = ord(letters[-1])
+
+        if target_ord >= last_ord:
+            return letters[0]
+
+        left = 0
+        right = len(letters)
+
+        while left < right:
+            mid = left + (right - left) // 2
+            mid_ord = ord(letters[mid])
+
+            if target_ord < mid_ord:
+                right = mid
+            else:
+                left = mid + 1
+
+    
+        return letters[left]
